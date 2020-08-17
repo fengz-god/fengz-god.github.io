@@ -3,8 +3,6 @@
 <head>
   <meta charset="utf-8">
   
-
-  
   <title>Hello World | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
@@ -19,76 +17,78 @@
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
+
+  <script type="text/javascript">
+  function jqueryLoaded() {
+    window.postMessage('jquery-load', '*');
+  }
+  </script>
+
   
 <link rel="stylesheet" href="/css/style.css">
 
+
+  <script defer src="https://use.fontawesome.com/a49b4f783c.js"></script>
+  <script defer src="//code.jquery.com/jquery-3.2.1.min.js" onload="jqueryLoaded()"></script>
+  <script defer src="/js/script.js"></script>
+
+  
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+    <script type="text/javascript">
+    window.addEventListener("message", function(msg) {
+      if(msg.data === 'jquery-load') {
+        $('head').append('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />');
+      }
+    });
+    </script>
+  
 <meta name="generator" content="Hexo 5.0.2"></head>
 
 <body>
   <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
+    <header id="header">
+  <div class="outer">
+    <div class="title">
+      <a href="/" id="logo"><h1>Hexo</h1></a>
+      <div></div>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+    <div class="flex-spacer"></div>
+    <nav class="nav">
+      <div>
         
-          <a class="main-nav-link" href="/">Home</a>
+          <a href="/" class="nav-link">Blog</a>
         
-          <a class="main-nav-link" href="/archives">Archives</a>
+          <a href="/about/" class="nav-link">About</a>
         
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
       </div>
-    </div>
+    </nav>
   </div>
 </header>
-      <div class="outer">
-        <section id="main"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/08/14/hello-world/" class="article-date">
-  <time datetime="2020-08-14T05:46:42.996Z" itemprop="datePublished">2020-08-14</time>
-</a>
-    
-  </div>
+
+    <div class="outer sidebar">
+      <section id="main"><article id="post-hello-world" class="card article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <time datetime="2020-08-14T05:46:42.996Z" itemprop="datePublished">2020-08-14</time>
+
+    </div>
+  
   <div class="article-inner">
     
+
     
       <header class="article-header">
         
-  
-    <h1 class="article-title" itemprop="name">
-      Hello World
-    </h1>
-  
+  <h1 class="article-title" itemprop="name">
+    Hello World
+  </h1>
+
 
       </header>
     
     <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+      <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
@@ -102,109 +102,66 @@
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/08/14/hello-world/" data-id="ckdu1qsgp0000g8v6egcydgg9" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
     
-<nav id="article-nav">
-  
-    <a href="/2020/08/14/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
+      <footer class="article-footer">
         
-          我的第一篇博客
-        
-      </div>
-    </a>
-  
-  
-</nav>
 
-  
+        <a data-url="http://yoursite.com/2020/08/14/hello-world/" data-id="ckdyfiuaz0000f8v66u2ahwex" class="article-share-link">share</a>
+        <div class="article-share-box">
+  <div class="article-share-links">
+    <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fyoursite.com%2F2020%2F08%2F14%2Fhello-world%2F" class="article-share-twitter" target="_blank" title="Twitter"></a>
+    <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fyoursite.com%2F2020%2F08%2F14%2Fhello-world%2F" class="article-share-facebook" target="_blank" title="Facebook"></a>
+    <a href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Fyoursite.com%2F2020%2F08%2F14%2Fhello-world%2F" class="article-share-linkedin" target="_blank" title="LinkedIn"></a>
+    <a href="https://plus.google.com/share?url=http%3A%2F%2Fyoursite.com%2F2020%2F08%2F14%2Fhello-world%2F" class="article-share-google" target="_blank" title="Google+"></a>
+  </div>
+</div>
+
+      </footer>
+    
+  </div>
 </article>
 
+
+
 </section>
-        
-          <aside id="sidebar">
-  
+      
+        <aside id="sidebar">
+  <div class="card">
     
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a></li></ul>
-    </div>
+      <div id="about-widget">
+  <p>Hello, <br>This is where you would write something short about yourself</p>
+  <div class="user-image">
+    <img src="/css/images/portrait.png">
   </div>
+  <p class="border-bottom"></p>
+</div>
 
-
-  
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2020/08/14/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">我的第一篇博客</a>
-          </li>
-        
-          <li>
-            <a href="/2020/08/14/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+      <div id="contact-widget">
+  <div>Contact:</div>
+  <p>Feel free to <a href="mailto:undefined" title="send me an email">send me an email</a> anytime</p>
+</div>
 
-  
+    
+  </div>
 </aside>
-        
-      </div>
-      <footer id="footer">
+
+      
+    </div>
+    <footer id="footer">
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2020 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      &copy; 2020 John Doe
+      <span class="pull-right">
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      </span>
     </div>
   </div>
 </footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+
     
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
 
 
 

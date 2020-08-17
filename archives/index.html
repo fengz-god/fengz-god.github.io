@@ -3,9 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-
-  
-  <title>Archives | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
@@ -15,183 +13,124 @@
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
+
+  <script type="text/javascript">
+  function jqueryLoaded() {
+    window.postMessage('jquery-load', '*');
+  }
+  </script>
+
   
 <link rel="stylesheet" href="/css/style.css">
 
+
+  <script defer src="https://use.fontawesome.com/a49b4f783c.js"></script>
+  <script defer src="//code.jquery.com/jquery-3.2.1.min.js" onload="jqueryLoaded()"></script>
+  <script defer src="/js/script.js"></script>
+
+  
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+    <script type="text/javascript">
+    window.addEventListener("message", function(msg) {
+      if(msg.data === 'jquery-load') {
+        $('head').append('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />');
+      }
+    });
+    </script>
+  
 <meta name="generator" content="Hexo 5.0.2"></head>
 
 <body>
   <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
+    <header id="header">
+  <div class="outer">
+    <div class="title">
+      <a href="/" id="logo"><h1>Hexo</h1></a>
+      <div></div>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+    <div class="flex-spacer"></div>
+    <nav class="nav">
+      <div>
         
-          <a class="main-nav-link" href="/">Home</a>
+          <a href="/" class="nav-link">Blog</a>
         
-          <a class="main-nav-link" href="/archives">Archives</a>
+          <a href="/about/" class="nav-link">About</a>
         
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
       </div>
-    </div>
+    </nav>
   </div>
 </header>
-      <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/08/14/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  <time datetime="2020-08-14T09:44:18.000Z" itemprop="datePublished">Aug 14</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/14/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">我的第一篇博客</a>
-    </h1>
-  
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/08/14/hello-world/" class="archive-article-date">
-  <time datetime="2020-08-14T05:46:42.996Z" itemprop="datePublished">Aug 14</time>
-</a>
+    <div class="outer sidebar">
+      <section id="main">
+  <div class="post card">
+    <div class="border-bottom">
+      <a href="http://yoursite.com/2020/08/14/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">
+        <h1 class="article-title ">我的第一篇博客</h1>
+      </a>
+      <time datetime="2020-08-14T09:44:18.000Z" itemprop="datePublished">2020-08-14</time>
+    </div>
+    <div class="content">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/14/hello-world/">Hello World</a>
-    </h1>
-  
-
-    </header>
+      <p></p>
+      <a href="http://yoursite.com/2020/08/14/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">Read More...</a>
+    </div>
   </div>
-</article>
-  
-  
-    </div></section>
-  
+
+  <div class="post card">
+    <div class="border-bottom">
+      <a href="http://yoursite.com/2020/08/14/hello-world/">
+        <h1 class="article-title ">Hello World</h1>
+      </a>
+      <time datetime="2020-08-14T05:46:42.996Z" itemprop="datePublished">2020-08-14</time>
+    </div>
+    <div class="content">
+      
+      <p></p>
+      <a href="http://yoursite.com/2020/08/14/hello-world/">Read More...</a>
+    </div>
+  </div>
 
 
 </section>
-        
-          <aside id="sidebar">
-  
+      
+        <aside id="sidebar">
+  <div class="card">
     
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a></li></ul>
-    </div>
+      <div id="about-widget">
+  <p>Hello, <br>This is where you would write something short about yourself</p>
+  <div class="user-image">
+    <img src="/css/images/portrait.png">
   </div>
+  <p class="border-bottom"></p>
+</div>
 
-
-  
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2020/08/14/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">我的第一篇博客</a>
-          </li>
-        
-          <li>
-            <a href="/2020/08/14/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+      <div id="contact-widget">
+  <div>Contact:</div>
+  <p>Feel free to <a href="mailto:undefined" title="send me an email">send me an email</a> anytime</p>
+</div>
 
-  
+    
+  </div>
 </aside>
-        
-      </div>
-      <footer id="footer">
+
+      
+    </div>
+    <footer id="footer">
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2020 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      &copy; 2020 John Doe
+      <span class="pull-right">
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      </span>
     </div>
   </div>
 </footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+
     
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
 
 
 
